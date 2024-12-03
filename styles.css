@@ -1,0 +1,379 @@
+body{
+    scroll-behavior: smooth;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: hsl(13, 31%, 94%);
+    position: relative;
+    
+}
+.container{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: hsl(13, 31%, 94%);
+    z-index: 2;
+}
+header{
+    padding-left: 20px;
+    font-weight: bolder;
+}
+.main_div1{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-width: 65%;
+}
+.main_div2{
+    display: flex;
+    min-width: 35%;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.dessert{
+    display: flex;
+    position: relative;
+    width: 280px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.dessert_img{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    min-height: fit-content;
+}
+.dessert_image{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.cart{
+    display: flex;
+    position: absolute;
+    align-self: center;
+    width: 35%;
+    top: 62%;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: hsl(14, 25%, 72%);
+    gap: 5px;
+    padding: 0 3%;
+}
+.cart p{
+    margin: 5px 0;
+}
+.add_items{
+    display: flex;
+    position: absolute;
+    align-self: center;
+    width: 35%;
+    top: 62.2%;
+    gap: 30px;
+    padding: 0 3%;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(14, 69%, 37%);
+}
+.add_items p{
+    margin: 5px 0;
+    color: white;
+}
+.increment{
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    border-radius:25px;
+    border-color:white;
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding: 1px;
+}
+.increment img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-3px);
+}
+.decrement{
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    border-radius:25px;
+    border-color:white;
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding: 1px;
+}
+.decrement img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-7px);
+    
+}
+.desert_price p{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: hsl(14, 25%, 72%);
+}
+.desert_price h3{
+    margin: 5px 0;
+}
+#price{
+    color: hsl(14, 65%, 42%);
+}
+.orders{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 5%;
+    padding-top: 0;
+    background-color:hsl(20, 50%, 98%) ;
+    border-radius: 10px;
+
+}
+.orders h2{
+    color: hsl(14, 97%, 52%);
+}
+.active_order{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.order_list{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding: 17px 10px;
+    box-sizing: border-box;
+}
+.order_list div{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 90%;
+}
+.order_list p{
+    margin: 0;
+    font-weight: bold;
+
+}
+.order_list span{
+    margin-right: 5%;
+}
+.order_list .remove_item{
+    width: 13px;
+    height: 13px;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: hsl(14, 25%, 72%);
+}
+#quantity{
+    color: hsl(14, 97%, 52%);
+}
+#price1{
+    color: hsl(14, 25%, 72%);
+}
+#Tprice{
+    color: hsl(12, 20%, 44%);
+}
+.total_price{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.total_price h2{
+    color: black;
+}
+.total_price p{
+    flex-basis: 90%;
+}
+.des{
+    display: flex;
+    align-self: center;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    background-color: hsl(13, 31%, 94%);
+    color: hsl(12, 20%, 44%);
+    border-radius: 10px;
+}
+.des span{
+    color: hsl(14, 65%, 9%);
+}
+.orders button{
+    width: 70%;
+    height: 40px;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 25px;
+    color: white;
+    background-color: hsl(14, 69%, 37%);
+    border: none;
+
+}
+.inactive_order{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.empty_img{
+    width: 40%;
+    align-self:center ;
+}
+.empty_img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.empty_text{
+    align-self: center;
+    color: hsl(12, 20%, 44%);
+}
+.container2{
+    display: flex;
+    position: fixed;
+    padding: 50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color:rgba(255, 255, 255, 0.471); 
+    justify-content: center;
+    z-index: 1;
+    
+}
+.order_confirm{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background-color: white;
+    align-self: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+.order_confirm p{
+    margin: 0px 5px;
+    color: hsl(12, 20%, 44%);
+}
+.final_order{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+.thumbnail_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.thumbnail_img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.order_name{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    box-sizing: border-box;
+}
+.order_name p{
+    font-weight: bold;
+    margin: 5px;
+    color: black;
+}
+.order_name #order_quantity{
+    color: hsl(14, 97%, 52%);
+    margin-right: 20px;
+}
+.order_name #order_price{
+    color: hsl(12, 20%, 44%);
+}
+#order_Tprice{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+#order_Tprice p{
+    color: black;
+    transform: translateY(10px);
+}
+.order_total_price{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+.order_total_price h2{
+    color: black;
+    margin: 0;
+}
+.order_total_price p{
+    flex-basis: 70%;
+    margin-top: 10px;
+}
+.neworder{
+    width: 70%;
+    height: 40px;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 25px;
+    color: white;
+    background-color: hsl(14, 69%, 37%);
+    border: none;
+}
+
+@media screen and (max-width: 720px){
+    .container{
+        flex-direction: column;
+    }
+    .main_div1{
+        width: 100%;
+        min-width: 100%;
+    }
+    .menu{
+        align-self: center;
+        justify-content: center;
+    }
+    .main_div2{
+        width: 100%;
+        max-width: 100%;
+    }
+    .active_order{
+        align-self: center;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .order_confirm{
+        width: 100%;
+    }
+}
+.no_display{
+    display: none;
+}
